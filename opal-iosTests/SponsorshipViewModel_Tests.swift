@@ -17,7 +17,8 @@ final class SponsorshipViewModel_Tests: XCTestCase {
             requiredFriends: 1,
             title: "Loyal Gem",
             description: "Unlock this special milestone",
-            excludePremiums: false
+            excludePremiums: false,
+            status: .ongoing
         )
         
         let sponsorship = Sponsorship(referredFriends: 0, rewards: [reward])
