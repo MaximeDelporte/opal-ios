@@ -19,6 +19,8 @@
 		FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */; };
 		FCF937FA2C0F638300E1AF04 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937F92C0F638300E1AF04 /* Reward.swift */; };
 		FCF938032C0F68D100E1AF04 /* SponsorshipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */; };
+		FCF938062C0F6A6F00E1AF04 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF938052C0F6A6F00E1AF04 /* Bundle+Extensions.swift */; };
+		FCF938072C0F6A9000E1AF04 /* sponsorship.json in Resources */ = {isa = PBXBuildFile; fileRef = FCF937F22C0F5EB600E1AF04 /* sponsorship.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 		FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorshipViewController.swift; sourceTree = "<group>"; };
 		FCF937F92C0F638300E1AF04 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorshipViewModel.swift; sourceTree = "<group>"; };
+		FCF938052C0F6A6F00E1AF04 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		FCF937B72C0F59AC00E1AF04 /* opal-ios */ = {
 			isa = PBXGroup;
 			children = (
+				FCF938042C0F6A6600E1AF04 /* Extensions */,
 				FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */,
 				FCF937F82C0F637900E1AF04 /* Models */,
 				FCF937F62C0F60BF00E1AF04 /* Features */,
@@ -165,6 +169,14 @@
 				FCF937F92C0F638300E1AF04 /* Reward.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FCF938042C0F6A6600E1AF04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCF938052C0F6A6F00E1AF04 /* Bundle+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +291,7 @@
 			files = (
 				FCF937C22C0F59AD00E1AF04 /* Assets.xcassets in Resources */,
 				FCF937C52C0F59AD00E1AF04 /* Base in Resources */,
+				FCF938072C0F6A9000E1AF04 /* sponsorship.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +320,7 @@
 				FCF937FA2C0F638300E1AF04 /* Reward.swift in Sources */,
 				FCF937BD2C0F59AC00E1AF04 /* HomeViewController.swift in Sources */,
 				FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */,
+				FCF938062C0F6A6F00E1AF04 /* Bundle+Extensions.swift in Sources */,
 				FCF938032C0F68D100E1AF04 /* SponsorshipViewModel.swift in Sources */,
 				FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */,
 			);

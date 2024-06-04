@@ -10,6 +10,6 @@ import Foundation
 class SponsorshipViewModel {
     
     func loadRewards() {
-        
+        // let sponsorship = Bundle.main.decode(Sponsorship.self, from: "sponsorship.json")
     }
 }
