@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */; };
-		FCF937BB2C0F59AC00E1AF04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937BA2C0F59AC00E1AF04 /* SceneDelegate.swift */; };
 		FCF937BD2C0F59AC00E1AF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937BC2C0F59AC00E1AF04 /* ViewController.swift */; };
-		FCF937C02C0F59AC00E1AF04 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FCF937BF2C0F59AC00E1AF04 /* Base */; };
 		FCF937C22C0F59AD00E1AF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF937C12C0F59AD00E1AF04 /* Assets.xcassets */; };
 		FCF937C52C0F59AD00E1AF04 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FCF937C42C0F59AD00E1AF04 /* Base */; };
 		FCF937D02C0F59AD00E1AF04 /* opal_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937CF2C0F59AD00E1AF04 /* opal_iosTests.swift */; };
@@ -38,9 +36,7 @@
 /* Begin PBXFileReference section */
 		FCF937B52C0F59AC00E1AF04 /* opal-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "opal-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCF937BA2C0F59AC00E1AF04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FCF937BC2C0F59AC00E1AF04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCF937BF2C0F59AC00E1AF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCF937C12C0F59AD00E1AF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCF937C42C0F59AD00E1AF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCF937C62C0F59AD00E1AF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,12 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */,
-				FCF937BA2C0F59AC00E1AF04 /* SceneDelegate.swift */,
 				FCF937BC2C0F59AC00E1AF04 /* ViewController.swift */,
-				FCF937BE2C0F59AC00E1AF04 /* Main.storyboard */,
-				FCF937C12C0F59AD00E1AF04 /* Assets.xcassets */,
-				FCF937C32C0F59AD00E1AF04 /* LaunchScreen.storyboard */,
-				FCF937C62C0F59AD00E1AF04 /* Info.plist */,
+				FCF937E82C0F5A0800E1AF04 /* Resources */,
 			);
 			path = "opal-ios";
 			sourceTree = "<group>";
@@ -125,6 +117,16 @@
 				FCF937DB2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift */,
 			);
 			path = "opal-iosUITests";
+			sourceTree = "<group>";
+		};
+		FCF937E82C0F5A0800E1AF04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCF937C12C0F59AD00E1AF04 /* Assets.xcassets */,
+				FCF937C32C0F59AD00E1AF04 /* LaunchScreen.storyboard */,
+				FCF937C62C0F59AD00E1AF04 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +235,6 @@
 			files = (
 				FCF937C22C0F59AD00E1AF04 /* Assets.xcassets in Resources */,
 				FCF937C52C0F59AD00E1AF04 /* Base in Resources */,
-				FCF937C02C0F59AC00E1AF04 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +261,6 @@
 			files = (
 				FCF937BD2C0F59AC00E1AF04 /* ViewController.swift in Sources */,
 				FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */,
-				FCF937BB2C0F59AC00E1AF04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FCF937BE2C0F59AC00E1AF04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCF937BF2C0F59AC00E1AF04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCF937C32C0F59AD00E1AF04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,10 +436,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RP68K7NXAW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "opal-ios/Info.plist";
+				INFOPLIST_FILE = "opal-ios/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,10 +468,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RP68K7NXAW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "opal-ios/Info.plist";
+				INFOPLIST_FILE = "opal-ios/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
