@@ -17,6 +17,7 @@
 		FCF937EF2C0F5DF600E1AF04 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FCF937EE2C0F5DF600E1AF04 /* SnapKit */; };
 		FCF937F32C0F5EB600E1AF04 /* sponsorship.json in Resources */ = {isa = PBXBuildFile; fileRef = FCF937F22C0F5EB600E1AF04 /* sponsorship.json */; };
 		FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */; };
+		FCF937FA2C0F638300E1AF04 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937F92C0F638300E1AF04 /* Reward.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		FCF937DB2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opal_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FCF937F22C0F5EB600E1AF04 /* sponsorship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sponsorship.json; sourceTree = "<group>"; };
 		FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorshipViewController.swift; sourceTree = "<group>"; };
+		FCF937F92C0F638300E1AF04 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */,
+				FCF937F82C0F637900E1AF04 /* Models */,
 				FCF937F62C0F60BF00E1AF04 /* Features */,
 				FCF937E82C0F5A0800E1AF04 /* Resources */,
 			);
@@ -151,6 +154,14 @@
 				FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */,
 			);
 			path = Sponsorship;
+			sourceTree = "<group>";
+		};
+		FCF937F82C0F637900E1AF04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCF937F92C0F638300E1AF04 /* Reward.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF937FA2C0F638300E1AF04 /* Reward.swift in Sources */,
 				FCF937BD2C0F59AC00E1AF04 /* HomeViewController.swift in Sources */,
 				FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */,
 				FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */,
