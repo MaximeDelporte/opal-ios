@@ -18,6 +18,7 @@
 		FCF937F32C0F5EB600E1AF04 /* sponsorship.json in Resources */ = {isa = PBXBuildFile; fileRef = FCF937F22C0F5EB600E1AF04 /* sponsorship.json */; };
 		FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */; };
 		FCF937FA2C0F638300E1AF04 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937F92C0F638300E1AF04 /* Reward.swift */; };
+		FCF938032C0F68D100E1AF04 /* SponsorshipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FCF937F22C0F5EB600E1AF04 /* sponsorship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sponsorship.json; sourceTree = "<group>"; };
 		FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorshipViewController.swift; sourceTree = "<group>"; };
 		FCF937F92C0F638300E1AF04 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorshipViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */,
+				FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */,
 			);
 			path = Sponsorship;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				FCF937FA2C0F638300E1AF04 /* Reward.swift in Sources */,
 				FCF937BD2C0F59AC00E1AF04 /* HomeViewController.swift in Sources */,
 				FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */,
+				FCF938032C0F68D100E1AF04 /* SponsorshipViewModel.swift in Sources */,
 				FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
