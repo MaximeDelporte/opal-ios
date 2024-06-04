@@ -8,7 +8,7 @@
 import XCTest
 @testable import opal_ios
 
-final class opal_iosTests: XCTestCase {
+final class SponsorshipViewModel_Tests: XCTestCase {
     
     
 }
