@@ -27,7 +27,7 @@ extension HomeViewController {
     private func setUpViews() {
         view.backgroundColor = .white
         view.addSubview(referredButton)
-        referredButton.setTitle("Open Referred View", for: .normal)
+        referredButton.setTitle("Open Sponsorship View", for: .normal)
         referredButton.setTitleColor(.blue, for: .normal)
     }
     
@@ -48,7 +48,8 @@ extension HomeViewController {
     
     @objc private func openReferredView() {
         let controller = SponsorshipViewController()
-        self.navigationController?.present(controller, animated: true)
+        let navigationController = UINavigationController(rootViewController: controller)
+        self.navigationController?.present(navigationController, animated: true)
     }
 }
 

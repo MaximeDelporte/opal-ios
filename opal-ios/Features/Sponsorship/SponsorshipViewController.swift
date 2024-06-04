@@ -35,6 +35,11 @@ class SponsorshipViewController: UIViewController {
         setUpConstraints()
         setUpBindings()
     }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        addFriendsButton.layer.cornerRadius = addFriendsButton.frame.height / 2
+    }
 }
 
 // MARK: - Common Methods
@@ -58,11 +63,16 @@ extension SponsorshipViewController {
         sponsorshipDescriptionLabel.textAlignment = .center
         sponsorshipDescriptionLabel.numberOfLines = 0
         
+        addFriendsButton.setTitle("Add Friends", for: .normal)
+        addFriendsButton.setTitleColor(.white, for: .normal)
+        addFriendsButton.backgroundColor = UIColor(hex: "#0075FF")
+        
         guestPassView.addSubview(guestPassTitleImageView)
         guestPassView.addSubview(guestPassDescriptionLabel)
         
         scrollView.addSubview(guestPassView)
         scrollView.addSubview(sponsorshipDescriptionLabel)
+        scrollView.addSubview(addFriendsButton)
     }
     
     private func setUpConstraints() {
@@ -91,9 +101,16 @@ extension SponsorshipViewController {
             $0.top.equalTo(guestPassView.snp.bottom).offset(32)
             $0.left.right.equalTo(guestPassView)
         }
+        
+        addFriendsButton.snp.makeConstraints {
+            $0.top.equalTo(sponsorshipDescriptionLabel.snp.bottom).offset(32)
+            $0.left.right.equalTo(guestPassView)
+        }
     }
     
     private func setUpBindings() {
+        addFriendsButton.addTarget(self, action: #selector(displayShareSheet), for: .touchUpInside)
+        
         viewModel.statePublisher.sink(receiveValue: { [weak self] state in
             guard let self = self else { return }
             switch state {
@@ -112,6 +129,12 @@ extension SponsorshipViewController {
 
 extension SponsorshipViewController {
     
+    @objc private func displayShareSheet() {
+        let shareContent = "Share Opal with your friends !"
+        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
+        self.present(activityViewController, animated: true)
+    }
+    
     private func addCards(from rewards: [Reward]) {
         for reward in rewards {
             let rewardCard = RewardCard(reward: reward)
@@ -129,7 +152,7 @@ extension SponsorshipViewController {
             
             if isFirstCard {
                 rewardCard.snp.makeConstraints {
-                    $0.top.equalTo(sponsorshipDescriptionLabel.snp.bottom).offset(32)
+                    $0.top.equalTo(addFriendsButton.snp.bottom).offset(32)
                     $0.left.right.equalTo(guestPassView)
                 }
             } 

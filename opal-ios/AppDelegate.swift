@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: homeController)
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = SponsorshipViewController()
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
         return true
