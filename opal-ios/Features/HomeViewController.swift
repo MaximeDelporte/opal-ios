@@ -47,7 +47,8 @@ extension HomeViewController {
 extension HomeViewController {
     
     @objc private func openReferredView() {
-        
+        let controller = SponsorshipViewController()
+        self.navigationController?.present(controller, animated: true)
     }
 }
 
