@@ -39,7 +39,7 @@ final class SponsorshipViewModel_Tests: XCTestCase {
         
         XCTAssertEqual(sponsorship.referredFriends, 0)
         
-        let firstReward = sponsorship.reward[0]
+        let firstReward = sponsorship.rewards[0]
         XCTAssertEqual(firstReward.imageUrl, "loyal-gem")
         XCTAssertEqual(firstReward.requiredFriends, 1)
         XCTAssertEqual(firstReward.title, "Loyal Gem")

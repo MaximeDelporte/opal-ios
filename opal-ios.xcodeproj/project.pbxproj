@@ -21,6 +21,7 @@
 		FCF938032C0F68D100E1AF04 /* SponsorshipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */; };
 		FCF938062C0F6A6F00E1AF04 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF938052C0F6A6F00E1AF04 /* Bundle+Extensions.swift */; };
 		FCF938072C0F6A9000E1AF04 /* sponsorship.json in Resources */ = {isa = PBXBuildFile; fileRef = FCF937F22C0F5EB600E1AF04 /* sponsorship.json */; };
+		FCF938092C0F6BBC00E1AF04 /* Sponsorship.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF938082C0F6BBC00E1AF04 /* Sponsorship.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FCF937F92C0F638300E1AF04 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorshipViewModel.swift; sourceTree = "<group>"; };
 		FCF938052C0F6A6F00E1AF04 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		FCF938082C0F6BBC00E1AF04 /* Sponsorship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sponsorship.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		FCF937F82C0F637900E1AF04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FCF938082C0F6BBC00E1AF04 /* Sponsorship.swift */,
 				FCF937F92C0F638300E1AF04 /* Reward.swift */,
 			);
 			path = Models;
@@ -322,6 +325,7 @@
 				FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */,
 				FCF938062C0F6A6F00E1AF04 /* Bundle+Extensions.swift in Sources */,
 				FCF938032C0F68D100E1AF04 /* SponsorshipViewModel.swift in Sources */,
+				FCF938092C0F6BBC00E1AF04 /* Sponsorship.swift in Sources */,
 				FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
