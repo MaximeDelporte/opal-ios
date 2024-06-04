@@ -5,44 +5,43 @@
             "image_url": "loyal-gem",
             "required_friends": 1,
             "title": "Loyal Gem",
-            "description": "Unlock this special milestone"
-        },
-        {
-            "image_url": "soulful-gem",
-            "required_friends": 3,
-            "title": "Soulful Gem",
-            "description": "Unlock this special milestone"
-        },
-        {
-            "image_url": "soulful-gem",
-            "required_friends": 3,
-            "title": "Soulful Gem",
-            "description": "Unlock this special milestone"
+            "description": "Unlock this special milestone",
+            "exclude_premiums": false
         },
         {
             "image_url": "soulful-gem",
             "required_friends": 3,
             "title": "Soulful Gem",
             "description": "Unlock this special milestone",
-            "is_premium_reward": false
+            "exclude_premiums": false
+        },
+        {
+            "image_url": "opal-pro",
+            "required_friends": 5,
+            "title": "1 Year of Opal Pro",
+            "description": "Unlock one whole year of Opal Pro for Free.",
+            "exclude_premiums": true
         },
         {
             "image_url": "popular-gem",
             "required_friends": 10,
             "title": "Popular Gem",
-            "description": "Unlock this special milestone"
+            "description": "Unlock this special milestone",
+            "exclude_premiums": false
         },
         {
             "image_url": "gift",
             "required_friends": 20,
             "title": "Special Gift",
-            "description": "Contact us to receive a special gift from the Opal Team"
+            "description": "Contact us to receive a special gift from the Opal Team",
+            "exclude_premiums": false
         },
         {
             "image_url": "gift",
             "required_friends": 100,
             "title": "Mystery Gift",
-            "description": "Contact us to receive a life changing gift from Opal"
+            "description": "Contact us to receive a life changing gift from Opal",
+            "exclude_premiums": false
         }
     ]
 }
