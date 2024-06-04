@@ -16,6 +16,7 @@
 		FCF937DC2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937DB2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift */; };
 		FCF937EF2C0F5DF600E1AF04 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FCF937EE2C0F5DF600E1AF04 /* SnapKit */; };
 		FCF937F32C0F5EB600E1AF04 /* rewards.json in Resources */ = {isa = PBXBuildFile; fileRef = FCF937F22C0F5EB600E1AF04 /* rewards.json */; };
+		FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FCF937D92C0F59AD00E1AF04 /* opal_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opal_iosUITests.swift; sourceTree = "<group>"; };
 		FCF937DB2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opal_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FCF937F22C0F5EB600E1AF04 /* rewards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rewards.json; sourceTree = "<group>"; };
+		FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorshipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */,
-				FCF937BC2C0F59AC00E1AF04 /* HomeViewController.swift */,
+				FCF937F62C0F60BF00E1AF04 /* Features */,
 				FCF937E82C0F5A0800E1AF04 /* Resources */,
 			);
 			path = "opal-ios";
@@ -148,6 +150,23 @@
 				FCF937F22C0F5EB600E1AF04 /* rewards.json */,
 			);
 			path = rewards;
+			sourceTree = "<group>";
+		};
+		FCF937F62C0F60BF00E1AF04 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FCF937BC2C0F59AC00E1AF04 /* HomeViewController.swift */,
+				FCF937F72C0F60C600E1AF04 /* Sponsorship */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FCF937F72C0F60C600E1AF04 /* Sponsorship */ = {
+			isa = PBXGroup;
+			children = (
+				FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */,
+			);
+			path = Sponsorship;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +308,7 @@
 			files = (
 				FCF937BD2C0F59AC00E1AF04 /* HomeViewController.swift in Sources */,
 				FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */,
+				FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
