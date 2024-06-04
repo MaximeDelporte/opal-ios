@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */; };
-		FCF937BD2C0F59AC00E1AF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937BC2C0F59AC00E1AF04 /* ViewController.swift */; };
+		FCF937BD2C0F59AC00E1AF04 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937BC2C0F59AC00E1AF04 /* HomeViewController.swift */; };
 		FCF937C22C0F59AD00E1AF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF937C12C0F59AD00E1AF04 /* Assets.xcassets */; };
 		FCF937C52C0F59AD00E1AF04 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FCF937C42C0F59AD00E1AF04 /* Base */; };
 		FCF937D02C0F59AD00E1AF04 /* opal_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937CF2C0F59AD00E1AF04 /* opal_iosTests.swift */; };
 		FCF937DA2C0F59AD00E1AF04 /* opal_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937D92C0F59AD00E1AF04 /* opal_iosUITests.swift */; };
 		FCF937DC2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937DB2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift */; };
 		FCF937EF2C0F5DF600E1AF04 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FCF937EE2C0F5DF600E1AF04 /* SnapKit */; };
+		FCF937F32C0F5EB600E1AF04 /* rewards.json in Resources */ = {isa = PBXBuildFile; fileRef = FCF937F22C0F5EB600E1AF04 /* rewards.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		FCF937B52C0F59AC00E1AF04 /* opal-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "opal-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCF937BC2C0F59AC00E1AF04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCF937BC2C0F59AC00E1AF04 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FCF937C12C0F59AD00E1AF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCF937C42C0F59AD00E1AF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCF937C62C0F59AD00E1AF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		FCF937D52C0F59AD00E1AF04 /* opal-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "opal-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF937D92C0F59AD00E1AF04 /* opal_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opal_iosUITests.swift; sourceTree = "<group>"; };
 		FCF937DB2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opal_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCF937F22C0F5EB600E1AF04 /* rewards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rewards.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */,
-				FCF937BC2C0F59AC00E1AF04 /* ViewController.swift */,
+				FCF937BC2C0F59AC00E1AF04 /* HomeViewController.swift */,
 				FCF937E82C0F5A0800E1AF04 /* Resources */,
 			);
 			path = "opal-ios";
@@ -107,6 +109,7 @@
 		FCF937CE2C0F59AD00E1AF04 /* opal-iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				FCF937F02C0F5E1D00E1AF04 /* files */,
 				FCF937CF2C0F59AD00E1AF04 /* opal_iosTests.swift */,
 			);
 			path = "opal-iosTests";
@@ -129,6 +132,22 @@
 				FCF937C62C0F59AD00E1AF04 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCF937F02C0F5E1D00E1AF04 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				FCF937F12C0F5EA200E1AF04 /* rewards */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
+		FCF937F12C0F5EA200E1AF04 /* rewards */ = {
+			isa = PBXGroup;
+			children = (
+				FCF937F22C0F5EB600E1AF04 /* rewards.json */,
+			);
+			path = rewards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF937F32C0F5EB600E1AF04 /* rewards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCF937BD2C0F59AC00E1AF04 /* ViewController.swift in Sources */,
+				FCF937BD2C0F59AC00E1AF04 /* HomeViewController.swift in Sources */,
 				FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

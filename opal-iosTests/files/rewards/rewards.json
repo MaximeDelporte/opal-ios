@@ -1,0 +1,46 @@
+"referred_friends": 0,
+"rewards": [
+	{
+		"image_url": "loyal-gem",
+		"required_friends": 1,
+		"title": "Loyal Gem",
+		"description": "Unlock this special milestone",
+	},
+	{
+		"image_url": "soulful-gem",
+		"required_friends": 3,
+		”title”: "Soulful Gem",
+		"description": "Unlock this special milestone",
+	},
+	{
+		"image_url": "soulful-gem",
+		"required_friends": 3,
+		"title": "Soulful Gem",
+		"description": "Unlock this special milestone",
+	},
+	{
+		"image_url": "soulful-gem",
+		"required_friends": 3,
+		"title": "Soulful Gem",
+		"description": "Unlock this special milestone",
+		"is_premium_reward": false
+	},
+	{
+		"image_url": "popular-gem",
+		"required_friends": 10,
+		"title": "Popular Gem",
+		"description": "Unlock this special milestone",
+	},
+	{
+		"image_url": "gift",
+		"required_friends": 20,
+		"title": "Special Gift",
+		"description": "Contact us to receive a special gift from the Opal Team",
+	},
+	{
+		"image_url": "gift",
+		"required_friends": 100,
+		"title": "Mystery Gift",
+		"description": "Contact us to receive a life changing gift from Opal",
+	},
+]
