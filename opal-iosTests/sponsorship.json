@@ -18,7 +18,7 @@
             "status": 1
         },
         {
-            "image_url": "opal-pro",
+            "image_url": "opal-reward",
             "required_friends": 5,
             "title": "1 Year of Opal Pro",
             "description": "Unlock one whole year of Opal Pro for Free.",
@@ -34,7 +34,7 @@
             "status": 0
         },
         {
-            "image_url": "gift",
+            "image_url": "opal-gift",
             "required_friends": 20,
             "title": "Special Gift",
             "description": "Contact us to receive a special gift from the Opal Team",

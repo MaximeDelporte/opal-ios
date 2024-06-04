@@ -24,6 +24,8 @@ class SponsorshipViewController: UIViewController {
     private let addFriendsButton = UIButton()
     private let shareReferralLinkButton = UIButton()
     
+    private var rewardCards = [RewardCard]()
+    
     private var cancellable = Set<AnyCancellable>()
     private let viewModel = SponsorshipViewModel()
     
@@ -88,7 +90,6 @@ extension SponsorshipViewController {
         sponsorshipDescriptionLabel.snp.makeConstraints {
             $0.top.equalTo(guestPassView.snp.bottom).offset(32)
             $0.left.right.equalTo(guestPassView)
-            $0.bottom.equalToSuperview().offset(-32)
         }
     }
     
@@ -99,7 +100,7 @@ extension SponsorshipViewController {
             case .loading:
                 print("Show loader")
             case .loaded(let sponsorship):
-                print("Make list")
+                self.addCards(from: sponsorship.rewards)
             }
         }).store(in: &cancellable)
         
@@ -111,5 +112,44 @@ extension SponsorshipViewController {
 
 extension SponsorshipViewController {
     
+    private func addCards(from rewards: [Reward]) {
+        for reward in rewards {
+            let rewardCard = RewardCard(reward: reward)
+            rewardCards.append(rewardCard)
+        }
+        
+        setUpRewardCardsConstraints()
+    }
     
+    private func setUpRewardCardsConstraints() {
+        for (index, rewardCard) in rewardCards.enumerated() {
+            scrollView.addSubview(rewardCard)
+            
+            let isFirstCard = index == 0
+            
+            if isFirstCard {
+                rewardCard.snp.makeConstraints {
+                    $0.top.equalTo(sponsorshipDescriptionLabel.snp.bottom).offset(32)
+                    $0.left.right.equalTo(guestPassView)
+                }
+            } 
+            else {
+                let isLastCard = index == rewardCards.count - 1
+                let previousCard = rewardCards[index - 1]
+                
+                if isLastCard {
+                    rewardCard.snp.makeConstraints {
+                        $0.top.equalTo(previousCard.snp.bottom).offset(16)
+                        $0.left.right.equalTo(guestPassView)
+                        $0.bottom.equalToSuperview().offset(-32)
+                    }
+                } else {
+                    rewardCard.snp.makeConstraints {
+                        $0.top.equalTo(previousCard.snp.bottom).offset(16)
+                        $0.left.right.equalTo(guestPassView)
+                    }
+                }
+            }
+        }
+    }
 }

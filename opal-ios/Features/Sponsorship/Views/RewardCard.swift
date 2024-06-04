@@ -98,19 +98,19 @@ extension RewardCard {
         }
         
         requirementLabel.snp.makeConstraints {
-            $0.left.equalTo(rewardView.snp.right).offset(32)
             $0.top.equalToSuperview().offset(16)
+            $0.left.equalTo(rewardView.snp.right).offset(32)
             $0.right.equalToSuperview().offset(-16)
         }
         
         titleLabel.snp.makeConstraints {
+            $0.top.equalTo(requirementLabel.snp.bottom).offset(4)
             $0.left.right.equalTo(requirementLabel)
-            $0.top.equalTo(requirementLabel.snp.bottom).offset(8)
         }
         
         descriptionLabel.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(0)
             $0.left.right.equalTo(requirementLabel)
-            $0.top.equalTo(titleLabel.snp.bottom).offset(8)
         }
         
         if ongoingMode {
@@ -123,14 +123,14 @@ extension RewardCard {
         } else {
             claimButton.snp.makeConstraints {
                 $0.left.equalTo(requirementLabel)
-                $0.top.equalTo(descriptionLabel.snp.bottom).offset(16)
+                $0.top.equalTo(descriptionLabel.snp.bottom).offset(12)
                 $0.bottom.equalToSuperview().offset(-16)
             }
         }
     }
 }
 
-#Preview {
-    RewardCard(reward: Reward(imageUrl: "loyal-gem", requiredFriends: 1, title: "Loyal Gem", description: "Unlock this special milestone", excludePremiums: false, status: .claim))
-}
-
+//#Preview {
+//    RewardCard(reward: Reward(imageUrl: "loyal-gem", requiredFriends: 1, title: "Loyal Gem", description: "Unlock this special milestone", excludePremiums: false, status: .claim))
+//}
+//
