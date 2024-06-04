@@ -18,11 +18,16 @@ final class SponsorshipViewModel_Tests: XCTestCase {
             description: "Unlock this special milestone",
             isPremiumReward: false
         )
-            
+        
         XCTAssertEqual(reward.imageUrl, "loyal-gem")
         XCTAssertEqual(reward.requiredFriends, 1)
         XCTAssertEqual(reward.title, "Loyal Gem")
         XCTAssertEqual(reward.description, "Unlock this special milestone")
         XCTAssertEqual(reward.isPremiumReward, false)
+    }
+    
+    func test_loadRewards_OK() {
+        let viewModel = SponsorshipViewModel()
+        viewModel.loadRewards()
     }
 }
