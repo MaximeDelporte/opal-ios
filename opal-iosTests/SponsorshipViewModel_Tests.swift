@@ -33,7 +33,7 @@ final class SponsorshipViewModel_Tests: XCTestCase {
     
     func test_whenSponsorshipRequestIsSuccessful_thenWeShouldHaveProperties() {
         let viewModel = SponsorshipViewModel()
-//        sponsorship = viewModel.loadRewards()
-//        XCTAssertEqual(sponsorship.rewards, 7)
+        let sponsorship = viewModel.loadRewards()
+        XCTAssertEqual(sponsorship.rewards.count, 7)
     }
 }

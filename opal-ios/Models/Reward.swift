@@ -7,11 +7,19 @@
 
 import Foundation
 
-struct Reward {
+struct Reward: Decodable {
     
     let imageUrl: String
     let requiredFriends: Int
     let title: String
     let description: String
     let isPremiumReward: Bool?
+    
+    enum CodingKeys: String, CodingKey {
+        case imageUrl = "image_url"
+        case requiredFriends = "required_friends"
+        case title
+        case description
+        case isPremiumReward = "is_premium_reward"
+    }
 }

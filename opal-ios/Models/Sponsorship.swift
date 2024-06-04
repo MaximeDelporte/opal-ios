@@ -7,8 +7,13 @@
 
 import Foundation
 
-struct Sponsorship {
+struct Sponsorship: Decodable {
     
     let referredFriends: Int
     let rewards: [Reward]
+    
+    enum CodingKeys: String, CodingKey {
+        case referredFriends = "referred_friends"
+        case rewards
+    }
 }
