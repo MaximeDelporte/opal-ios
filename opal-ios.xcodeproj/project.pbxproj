@@ -22,6 +22,8 @@
 		FCF938062C0F6A6F00E1AF04 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF938052C0F6A6F00E1AF04 /* Bundle+Extensions.swift */; };
 		FCF938072C0F6A9000E1AF04 /* sponsorship.json in Resources */ = {isa = PBXBuildFile; fileRef = FCF937F22C0F5EB600E1AF04 /* sponsorship.json */; };
 		FCF938092C0F6BBC00E1AF04 /* Sponsorship.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF938082C0F6BBC00E1AF04 /* Sponsorship.swift */; };
+		FCF9380C2C0F7E5F00E1AF04 /* RewardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF9380B2C0F7E5F00E1AF04 /* RewardCard.swift */; };
+		FCF9380E2C0F7FC300E1AF04 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF9380D2C0F7FC300E1AF04 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorshipViewModel.swift; sourceTree = "<group>"; };
 		FCF938052C0F6A6F00E1AF04 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		FCF938082C0F6BBC00E1AF04 /* Sponsorship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sponsorship.swift; sourceTree = "<group>"; };
+		FCF9380B2C0F7E5F00E1AF04 /* RewardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCard.swift; sourceTree = "<group>"; };
+		FCF9380D2C0F7FC300E1AF04 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +114,8 @@
 		FCF937B72C0F59AC00E1AF04 /* opal-ios */ = {
 			isa = PBXGroup;
 			children = (
-				FCF938042C0F6A6600E1AF04 /* Extensions */,
 				FCF937B82C0F59AC00E1AF04 /* AppDelegate.swift */,
+				FCF938042C0F6A6600E1AF04 /* Extensions */,
 				FCF937F82C0F637900E1AF04 /* Models */,
 				FCF937F62C0F60BF00E1AF04 /* Features */,
 				FCF937E82C0F5A0800E1AF04 /* Resources */,
@@ -161,6 +165,7 @@
 			children = (
 				FCF937F42C0F60BC00E1AF04 /* SponsorshipViewController.swift */,
 				FCF938022C0F68D100E1AF04 /* SponsorshipViewModel.swift */,
+				FCF9380A2C0F7E5500E1AF04 /* Views */,
 			);
 			path = Sponsorship;
 			sourceTree = "<group>";
@@ -178,8 +183,17 @@
 			isa = PBXGroup;
 			children = (
 				FCF938052C0F6A6F00E1AF04 /* Bundle+Extensions.swift */,
+				FCF9380D2C0F7FC300E1AF04 /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCF9380A2C0F7E5500E1AF04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCF9380B2C0F7E5F00E1AF04 /* RewardCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,10 +336,12 @@
 			files = (
 				FCF937FA2C0F638300E1AF04 /* Reward.swift in Sources */,
 				FCF937BD2C0F59AC00E1AF04 /* HomeViewController.swift in Sources */,
+				FCF9380C2C0F7E5F00E1AF04 /* RewardCard.swift in Sources */,
 				FCF937B92C0F59AC00E1AF04 /* AppDelegate.swift in Sources */,
 				FCF938062C0F6A6F00E1AF04 /* Bundle+Extensions.swift in Sources */,
 				FCF938032C0F68D100E1AF04 /* SponsorshipViewModel.swift in Sources */,
 				FCF938092C0F6BBC00E1AF04 /* Sponsorship.swift in Sources */,
+				FCF9380E2C0F7FC300E1AF04 /* UIColor+Extensions.swift in Sources */,
 				FCF937F52C0F60BD00E1AF04 /* SponsorshipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +526,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +561,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
