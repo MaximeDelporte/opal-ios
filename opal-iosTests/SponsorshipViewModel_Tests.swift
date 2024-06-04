@@ -26,8 +26,9 @@ final class SponsorshipViewModel_Tests: XCTestCase {
         XCTAssertEqual(reward.isPremiumReward, false)
     }
     
-    func test_loadRewards_OK() {
+    func test_whenSponsorshipRequestIsSuccessful_thenWeShouldHaveProperties() {
         let viewModel = SponsorshipViewModel()
-        viewModel.loadRewards()
+        sponsorship = viewModel.loadRewards()
+        XCTAssertEqual(sponsorship.rewards, 7)
     }
 }
