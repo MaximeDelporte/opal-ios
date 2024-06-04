@@ -7,12 +7,18 @@
 
 import Combine
 import Foundation
+import SnapKit
 import UIKit
 
 class SponsorshipViewController: UIViewController {
     
     private let scrollView = UIScrollView()
-    private let mainCardView = UIView()
+    
+    // Guest Pass view
+    private let guestPassView = UIView()
+    private let guestPassTitleImageView = UIImageView()
+    private let guestPassDescriptionLabel = UILabel()
+    
     private let sponsorshipDescriptionLabel = UILabel()
     private let referredCard = UIView()
     private let addFriendsButton = UIButton()
@@ -34,11 +40,56 @@ class SponsorshipViewController: UIViewController {
 extension SponsorshipViewController {
     
     private func setUpViews() {
+        view.backgroundColor = .black
+        view.addSubview(scrollView)
         
+        guestPassView.backgroundColor = .purple
+        guestPassView.layer.cornerRadius = 16
+        guestPassTitleImageView.image = UIImage(named: "opal-title")
+        guestPassDescriptionLabel.text = "30-day Guest Pass"
+        guestPassDescriptionLabel.font = .systemFont(ofSize: 12, weight: .semibold)
+        guestPassDescriptionLabel.textColor = .white.withAlphaComponent(0.9)
+        
+        sponsorshipDescriptionLabel.text = "Give a friend unlimited access to Opal Pro, including unlimited schedules, app limits, deep focus, whitelisting and more!"
+        sponsorshipDescriptionLabel.font = .systemFont(ofSize: 16, weight: .regular)
+        sponsorshipDescriptionLabel.textColor = .white
+        sponsorshipDescriptionLabel.textAlignment = .center
+        sponsorshipDescriptionLabel.numberOfLines = 0
+        
+        guestPassView.addSubview(guestPassTitleImageView)
+        guestPassView.addSubview(guestPassDescriptionLabel)
+        
+        scrollView.addSubview(guestPassView)
+        scrollView.addSubview(sponsorshipDescriptionLabel)
     }
     
     private func setUpConstraints() {
+        scrollView.snp.makeConstraints {
+            $0.edges.equalTo(view.safeAreaLayoutGuide)
+        }
         
+        guestPassView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(16)
+            $0.left.equalTo(view).offset(16)
+            $0.right.equalTo(view).offset(-16)
+        }
+        
+        guestPassTitleImageView.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(64)
+            $0.centerX.equalToSuperview()
+        }
+        
+        guestPassDescriptionLabel.snp.makeConstraints {
+            $0.top.equalTo(guestPassTitleImageView.snp.bottom).offset(8)
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview().offset(-64)
+        }
+        
+        sponsorshipDescriptionLabel.snp.makeConstraints {
+            $0.top.equalTo(guestPassView.snp.bottom).offset(32)
+            $0.left.right.equalTo(guestPassView)
+            $0.bottom.equalToSuperview().offset(-32)
+        }
     }
     
     private func setUpBindings() {
