@@ -503,6 +503,8 @@
 				DEVELOPMENT_TEAM = RP68K7NXAW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "opal-ios/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Opal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -535,6 +537,8 @@
 				DEVELOPMENT_TEAM = RP68K7NXAW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "opal-ios/Resources/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Opal;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
