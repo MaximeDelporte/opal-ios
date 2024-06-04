@@ -14,6 +14,7 @@
 		FCF937D02C0F59AD00E1AF04 /* opal_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937CF2C0F59AD00E1AF04 /* opal_iosTests.swift */; };
 		FCF937DA2C0F59AD00E1AF04 /* opal_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937D92C0F59AD00E1AF04 /* opal_iosUITests.swift */; };
 		FCF937DC2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF937DB2C0F59AD00E1AF04 /* opal_iosUITestsLaunchTests.swift */; };
+		FCF937EF2C0F5DF600E1AF04 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FCF937EE2C0F5DF600E1AF04 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF937EF2C0F5DF600E1AF04 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = "opal-ios";
+			packageProductDependencies = (
+				FCF937EE2C0F5DF600E1AF04 /* SnapKit */,
+			);
 			productName = "opal-ios";
 			productReference = FCF937B52C0F59AC00E1AF04 /* opal-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = FCF937AC2C0F59AC00E1AF04;
+			packageReferences = (
+				FCF937ED2C0F5DF600E1AF04 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FCF937B62C0F59AC00E1AF04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -607,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FCF937ED2C0F5DF600E1AF04 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FCF937EE2C0F5DF600E1AF04 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCF937ED2C0F5DF600E1AF04 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FCF937AD2C0F59AC00E1AF04 /* Project object */;
 }
