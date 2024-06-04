@@ -13,13 +13,13 @@ struct Reward: Decodable {
     let requiredFriends: Int
     let title: String
     let description: String
-    let isPremiumReward: Bool?
+    let excludePremiums: Bool
     
     enum CodingKeys: String, CodingKey {
         case imageUrl = "image_url"
         case requiredFriends = "required_friends"
         case title
         case description
-        case isPremiumReward = "is_premium_reward"
+        case excludePremiums = "exclude_premiums"
     }
 }

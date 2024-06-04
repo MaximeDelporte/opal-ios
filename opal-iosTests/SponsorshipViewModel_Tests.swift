@@ -16,7 +16,7 @@ final class SponsorshipViewModel_Tests: XCTestCase {
             requiredFriends: 1,
             title: "Loyal Gem",
             description: "Unlock this special milestone",
-            isPremiumReward: false
+            excludePremiums: false
         )
         
         let sponsorship = Sponsorship(referredFriends: 0, rewards: [reward])
@@ -28,12 +28,12 @@ final class SponsorshipViewModel_Tests: XCTestCase {
         XCTAssertEqual(firstReward.requiredFriends, 1)
         XCTAssertEqual(firstReward.title, "Loyal Gem")
         XCTAssertEqual(firstReward.description, "Unlock this special milestone")
-        XCTAssertEqual(firstReward.isPremiumReward, false)
+        XCTAssertEqual(firstReward.excludePremiums, false)
     }
     
     func test_whenSponsorshipRequestIsSuccessful_thenWeShouldHaveProperties() {
         let viewModel = SponsorshipViewModel()
         let sponsorship = viewModel.loadRewards()
-        XCTAssertEqual(sponsorship.rewards.count, 7)
+        XCTAssertEqual(sponsorship.rewards.count, 6)
     }
 }
